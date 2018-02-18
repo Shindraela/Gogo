@@ -1,18 +1,16 @@
 <?php 
 class Pion extends Goban { 
-    public $couleur = ['noir','blanc'];
-    public $vivantMort = TRUE;
-    
-    function placer() { 
-        
-    } 
+    private $couleur = ['noir','blanc'];
+    private $vivantMort = TRUE;
 
-    function capture() {
-
+    public function getCouleur()
+    {
+        return $this->couleur;
     }
 
-    function territoire() {
-
+    public function setCouleur($couleur)
+    {
+        $this->couleur = $couleur;
     }
 
 } 

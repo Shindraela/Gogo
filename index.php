@@ -25,7 +25,7 @@
         <script>
             function clique() {
                 $.ajax({
-                    url:"vendor/clique.php",
+                    url:"vendor/clic.php",
                     type: "POST",
                     success:function(result){
                     alert(result);

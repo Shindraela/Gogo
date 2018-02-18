@@ -1,9 +1,19 @@
 <?php 
-class Pion { 
+class Pion extends Goban { 
     public $couleur = ['noir','blanc'];
+    public $vivantMort = TRUE;
     
-    function b() { 
+    function placer() { 
         
     } 
+
+    function capture() {
+
+    }
+
+    function territoire() {
+
+    }
+
 } 
 ?> 

@@ -34,12 +34,10 @@
 
         <?php
         require 'Goban.php';
-        $array = array(1, 2);
         $nbColonne = 9;
         $nbLigne = 9;
         $goban = new Goban;
-        $goban->affichageGoban($array, $nbColonne, $nbLigne);
-        print_r($goban);
+        $goban->affichageGoban($nbColonne, $nbLigne);
         ?>
 
     </body>

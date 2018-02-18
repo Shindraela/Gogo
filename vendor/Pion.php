@@ -1,6 +1,6 @@
 <?php 
 class Pion extends Goban { 
-    private $couleur = ['noir','blanc'];
+    private $couleur = array ('noir', 'blanc');
     private $vivantMort = TRUE;
 
     public function getCouleur()

@@ -8,12 +8,14 @@
     <body> 
         <table width="450px" cellspacing="0px" cellpadding="0px" border="1px">
         <?php
+            require_once "vendor/autoload.php";
+            
             for($i=1;$i<=9;$i++)
             {
                 echo "<tr>";
                 for($j=1;$j<=9;$j++)
                 {
-                    echo '<td onclick="foo()" height=50px width=50px bgcolor=#fcba54></td>';
+                    echo '<td onclick="clique()" height=50px width=50px bgcolor=#fcba54></td>';
                 }
                 echo "</tr>";
             }
@@ -21,9 +23,9 @@
         </table>
 
         <script>
-            function foo () {
+            function clique() {
                 $.ajax({
-                    url:"test.php",
+                    url:"vendor/clique.php",
                     type: "POST",
                     success:function(result){
                     alert(result);
@@ -33,7 +35,7 @@
         </script>
 
         <?php
-        require 'Goban.php';
+        require 'vendor/Goban.php';
         $goban = Goban::affichageGoban(9,9);
         echo $goban;
         ?>

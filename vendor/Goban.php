@@ -44,7 +44,7 @@ class Goban {
 
     public static function affichageGoban($nb_col, $nb_ligne)
     {
-        if (is_null(Goban::$instance))
+        if ( is_null(Goban::$instance) )
         {
             Goban::$instance = new Goban($nb_col, $nb_ligne);
             return Goban::$instance;
@@ -59,12 +59,14 @@ class Goban {
     {
 
     }
-    
-    function capture() {
+
+    function capture() 
+    {
 
     }
 
-    function territoire() {
+    function territoire() 
+    {
 
     }
     

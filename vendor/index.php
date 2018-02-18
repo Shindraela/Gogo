@@ -34,10 +34,8 @@
 
         <?php
         require 'Goban.php';
-        $nbColonne = 9;
-        $nbLigne = 9;
-        $goban = new Goban;
-        $goban->affichageGoban($nbColonne, $nbLigne);
+        $goban = Goban::affichageGoban(9,9);
+        echo $goban;
         ?>
 
     </body>

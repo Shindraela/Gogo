@@ -37,7 +37,8 @@
         <?php
         require 'vendor/Goban.php';
         $goban = Goban::affichageGoban(9,9);
-        echo $goban;
+        $g1 = serialize($goban);
+        echo $g1;
         ?>
 
     </body>

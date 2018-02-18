@@ -1,0 +1,10 @@
+{
+    "name": "dylanol/jeudego",
+    "description": "Jeu de go",
+    "authors": [{
+        "name": "dylanol",
+        "email": "oliveira.dylann@gmail.com"
+    }],
+    "require": {},
+    "autoload": { "psr-4": { "Ecv\\Architecture\\": "lib/" } }
+}

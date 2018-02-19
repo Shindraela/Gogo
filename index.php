@@ -25,7 +25,7 @@
         <script>
             function clique() {
                 $.ajax({
-                    url:"vendor/clic.php",
+                    url:"clic.php",
                     type: "POST",
                     success:function(result){
                     alert(result);
@@ -35,7 +35,10 @@
         </script>
 
         <?php
-        require 'vendor/Goban.php';
+        require 'Goban.php';
+        
+        use Ecv\Jeudego\Goban;
+
         $goban = Goban::affichageGoban(9,9);
         $g1 = serialize($goban);
         echo $g1;

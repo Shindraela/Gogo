@@ -1,4 +1,7 @@
 <?php 
+
+namespace Ecv\Jeudego;
+
 class Goban { 
 
     private $nb_col;

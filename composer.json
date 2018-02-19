@@ -6,5 +6,5 @@
         "email": "oliveira.dylann@gmail.com"
     }],
     "require": {},
-    "autoload": { "psr-4": { "Ecv\\Architecture\\": "lib/" } }
+    "autoload": { "psr-4": { "Ecv\\Jeudego\\": "lib/" } }
 }
